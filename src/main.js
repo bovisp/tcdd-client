@@ -11,7 +11,7 @@ import 'buefy/dist/buefy.css'
 
 require('@/store/subscriber')
 
-axios.defaults.baseURL = 'http://tcdd-api.test/api/'
+axios.defaults.baseURL = 'http://localhost:8000/api/'
 
 Vue.config.productionTip = false
 

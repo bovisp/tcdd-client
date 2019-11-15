@@ -8,6 +8,8 @@ import Dashboard from '@/views/Dashboard.vue'
 import ProjectsIndex from '@/views/projects/ProjectsIndex.vue'
 import ProjectsShow from '@/views/projects/ProjectsShow.vue'
 
+import MetedScrape from '@/views/coursetypes/comet/MetedScrape.vue'
+
 import store from '@/store'
 
 Vue.use(Router)
@@ -47,6 +49,18 @@ export default new Router({
       path: '/projects/:id',
       name: 'projects-show',
       component: ProjectsShow
+    },
+    {
+      path: '/courses/comet/scrape',
+      name: 'courses-comet-scrape',
+      component: MetedScrape,
+      beforeEnter: (to, from, next) => {
+        if (!store.getters['auth/authenticated']) {
+          next({ name: 'login' })
+        }
+
+        next()
+      }
     },
   ]
 })

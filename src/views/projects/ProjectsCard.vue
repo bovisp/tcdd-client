@@ -4,7 +4,7 @@
 	>
 		<div class="card-image">
 			<figure class="image is-4by3">
-				<img src="https://via.placeholder.com/800x600" :alt="project.name">
+				<img :src="`${project.image}800/600`" :alt="project.name">
 			</figure>
 		</div>
 

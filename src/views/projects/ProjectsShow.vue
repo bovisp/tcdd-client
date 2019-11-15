@@ -4,7 +4,7 @@
 			<div class="columns is-centered">
 				<div class="column is-two-thirds">
 					<figure class="image mb-4">
-						<img src="https://via.placeholder.com/1280x320" :alt="project.name">
+						<img :src="`${project.image}1280/320`" :alt="project.name">
 					</figure>
 
 					<h2 class="title">
