@@ -28,8 +28,17 @@
     margin-bottom: 1rem;
   }
 
+  .mt-1 {
+    margin-top: .25rem;
+  }
+
   .mt-4 {
     margin-top: 1rem;
+  }
+
+  .my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
   }
 
   .relative {

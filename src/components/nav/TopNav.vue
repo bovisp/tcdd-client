@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<b-navbar>
+		<b-navbar type="is-light">
 			<template slot="brand">
 				<b-navbar-item tag="router-link" :to="{ name: 'home' }">
 	        <img
